@@ -1,1 +1,258 @@
 /* Add CSS styling here */
+
+/*header at 800px*/
+
+@media screen and (min-width: 800px) {
+header{
+    display:flex;
+    background:teal;
+    flex-direction: column;
+    padding-left:50px;
+    margin-bottom:10px;
+  
+}
+
+main{
+    width:75%;
+    display:flex;
+    flex-direction:column;
+    padding-left:15%;
+    align-items:center;
+}
+
+h1{
+    font-family:Roboto;
+    text-transform:uppercase;
+}
+
+nav{
+    display:flex;
+flex:wrap;
+padding-bottom:20px;
+font-family:roboto;
+}
+
+a.navitem {
+    border:1px solid white;
+    padding:10px;
+    background:white;
+    color:teal;
+    text-decoration:none;
+}
+
+a.navitem:hover {
+    border:1px solid black;
+    background:black;
+    color:white;
+}
+
+a.current{
+    border:1px solid black;
+    padding:10px;
+    background:black;
+    color:white;
+    text-decoration:underline;
+}
+
+}
+
+/*header at less than 800px*/
+
+@media screen and (max-width: 800px) {
+    header{
+        display:flex;
+        background:teal;
+        flex-direction: column;
+        
+        margin-bottom:10px;
+        align-items:center;
+      
+    }
+    
+    main{
+        width:75%;
+        display:flex;
+        flex-direction:column;
+        padding-left:10%;
+        align-items:center;
+    }
+    
+    h1{
+        font-family:Roboto;
+        text-transform:uppercase;
+        color:white;
+    }
+    
+    nav{
+        display:flex;
+    flex:wrap;
+    flex-direction:column;
+    padding-bottom:20px;
+    font-family:roboto;
+    }
+    
+    a.navitem {
+        border:1px solid white;
+        padding:10px;
+        width:100%;
+        background:white;
+        color:teal;
+        text-decoration:none;
+        text-align:center;
+    }
+    
+    a.navitem:hover {
+        border:1px solid black;
+        background:black;
+        color:white;
+    
+    }
+    
+    a.current{
+        border:1px solid black;
+        padding:10px;
+        background:black;
+        color:white;
+        text-decoration:underline;
+        text-align:center;
+        width:100%;
+    }
+    
+    }
+
+/* intro section at 800px*/
+@media screen and (min-width: 800px) {
+div.intro {
+    display:flex;
+    flex:wrap;
+    justify-content:flex-start;
+    margin-bottom:20px;
+}
+
+img.main-img {
+  height:50%;
+  width:50%;  
+}
+}
+
+/*intro section at 500px*/
+
+@media screen and (max-width:800px){
+    div.intro{
+        align-items:center;
+        text-align:center;
+    }
+}
+
+div.lead-text{
+    padding:10%;
+
+}
+
+h2 {
+    font-family:roboto;
+    font-size:35px;
+    font-weight:100;
+}
+
+p { 
+    font-family:roboto;
+    font-weight:100;
+    font-size:1rem;
+}
+
+a.project-btn{
+    color:white;
+    text-decoration:none;
+    background:teal;
+    font-family:roboto;
+    font-weight:400;
+    text-transform:uppercase;
+    padding:10px;
+    margin-bottom:50px;
+
+}
+
+a.project-btn:hover{
+    border:1px solid teal;
+    color:teal;
+    background:white;
+}
+
+/*gallery at 800px*/
+
+@media screen and (min-width:800px){
+
+    div.gallery{
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:space-evenly;
+        
+    }
+    
+    div.image-gallery{
+     text-align:center;
+     font-family:roboto;
+     color:teal;
+     font-weight:100;
+     font-size:.75rem;
+    }
+    }
+/*gallery at less than 800px*/
+@media screen and (max-width:800px){
+
+    div.gallery{
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:space-evenly;
+        width:500px;
+        
+    }
+    
+    div.image-gallery{
+     text-align:center;
+     font-family:roboto;
+     color:teal;
+     font-weight:100;
+     font-size:.75rem;
+    }
+    }
+
+div.contact{
+    background:teal;
+    padding:10%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+a.contact-btn {
+    background:white;
+    color:teal;
+    font-family:roboto;
+    text-transform:uppercase;
+    text-decoration:none;
+    padding:10px;
+}
+
+a.contact-btn:hover {
+    background:teal;
+    color:white;
+}
+
+div.mainarea{
+    padding-bottom:10px;
+    display:flex;
+}
+
+div.about{
+    padding-right:10px;
+    font-family:roboto;
+}
+
+a {
+    color:teal;
+}
+
