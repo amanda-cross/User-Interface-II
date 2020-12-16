@@ -120,6 +120,8 @@ a.current{
     
     }
 
+/* intro section at 800px*/
+@media screen and (min-width: 800px) {
 div.intro {
     display:flex;
     flex:wrap;
@@ -130,6 +132,16 @@ div.intro {
 img.main-img {
   height:50%;
   width:50%;  
+}
+}
+
+/*intro section at 500px*/
+
+@media screen and (max-width:800px){
+    div.intro{
+        align-items:center;
+        text-align:center;
+    }
 }
 
 div.lead-text{
@@ -167,20 +179,44 @@ a.project-btn:hover{
     background:white;
 }
 
-div.gallery{
-    display:flex;
-    flex-flow:row wrap;
-    justify-content:space-evenly;
-    
-}
+/*gallery at 800px*/
 
-div.image-gallery{
- text-align:center;
- font-family:roboto;
- color:teal;
- font-weight:100;
- font-size:10px;
-}
+@media screen and (min-width:800px){
+
+    div.gallery{
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:space-evenly;
+        
+    }
+    
+    div.image-gallery{
+     text-align:center;
+     font-family:roboto;
+     color:teal;
+     font-weight:100;
+     font-size:10px;
+    }
+    }
+/*gallery at less than 800px*/
+@media screen and (max-width:800px){
+
+    div.gallery{
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:space-evenly;
+        width:500px;
+        
+    }
+    
+    div.image-gallery{
+     text-align:center;
+     font-family:roboto;
+     color:teal;
+     font-weight:100;
+     font-size:10px;
+    }
+    }
 
 div.contact{
     background:teal;
